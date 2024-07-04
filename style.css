@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    flex-direction: column;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+*::selection {
+    background-color: #FAD043;
+}
+
+body {
+    display: flex;
+    background: #000000;
+}
+
+main {
+    display: flex;
+    min-height: 93.4vh;
+}
+
+main>.initial {
+    display: flex;
+    padding: 0 4em;
+    margin-top: 5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+main>.initial>.texts {
+    flex: 0.5;
+    display: flex;
+}
+
+main>.initial>.texts>.logo {
+    width: 13em;
+}
+
+main>.initial>.texts>.title {
+    font-weight: 600;
+    font-size: 2.2em;
+    margin-top: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+main>.initial>.texts>.description {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+main>.initial>.texts>.button {
+    font-size: 1em;
+    margin-top: 4em;
+    color: #1E1E1E;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 10px;
+    text-decoration: none;
+    align-self: flex-start;
+    transition-duration: 0.2s;
+    background-color: #F9C823;
+    transition-timing-function: linear;
+    font-family: 'Raleway', sans-serif;
+}
+
+main>.initial>.texts>.button:hover {
+    transform: scale(1.08);
+}
+
+main>.initial>.container-photo {
+    flex: 0.5;
+    display: flex;
+}
+
+main>.initial>.container-photo>.photo {
+    height: auto;
+}
+
+main>.about {
+    display: flex;
+    margin-top: 7em;
+}
+
+main>.about>.title {
+    font-size: 2em;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+}
+
+main>.about>.description {
+    width: 80%;
+    max-width: 32em;
+    font-size: 1.5em;
+    margin-top: 1.2em;
+    align-self: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+footer {
+    padding: 1em;
+    display: flex;
+}
+
+footer>.description {
+    font-size: 0.8em;
+    color: #FFFFFF;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    main>.initial {
+        padding: 0 1.5em;
+        flex-direction: column;
+    }
+    
+    main>.initial>.texts>.logo {
+        align-self: center;
+    }
+    
+    main>.initial>.texts>.title {
+        font-size: 1.6em;
+    }
+    
+    main>.initial>.texts>.description {
+        font-size: 1.2em;
+    }
+    
+    main>.initial>.container-photo {
+        margin-top: 3em;
+    }
+
+    main>.initial>.container-photo>.photo {
+        width: 82%;
+        align-self: center;
+    }
+
+    main>.about>.title {
+        font-size: 1.6em;
+    }
+
+    main>.about>.description {
+        font-size: 1.2em;
+    }
+}
