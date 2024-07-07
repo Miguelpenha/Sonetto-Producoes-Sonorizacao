@@ -102,6 +102,48 @@ main>.about>.description {
     font-weight: normal;
 }
 
+main>.equipments {
+    display: flex;
+    margin-top: 5em;
+    align-self: center;
+}
+
+main>.equipments>.title {
+    width: 80%;
+    color: #F9C823;
+    font-weight: 600;
+    font-size: 2.2em;
+    align-self: center;
+    text-align: center;
+}
+
+main>.equipments>.description {
+    width: 80%;
+    margin-top: 1em;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+}
+
+main>.equipments>.photos {
+    gap: 3em;
+    display: flex;
+    overflow: auto;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+}
+
+main>.equipments>.photos>.photo {
+    width: 20%;
+    min-width: 266px;
+    scroll-snap-align: center;
+}
+
 footer {
     padding: 1em;
     display: flex;
@@ -148,5 +190,13 @@ footer>.description {
 
     main>.about>.description {
         font-size: 1.2em;
+    }
+
+    main>.equipments {
+        width: 100%;
+    }
+
+    main>.equipments>.description {
+        font-size: 1em;
     }
 }
