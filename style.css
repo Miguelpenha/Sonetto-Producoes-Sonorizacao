@@ -56,8 +56,8 @@ main>.initial>.texts>.button {
     font-size: 1em;
     margin-top: 4em;
     color: #1E1E1E;
-    font-weight: bold;
     padding: 1em 2em;
+    font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
     align-self: flex-start;
@@ -69,6 +69,30 @@ main>.initial>.texts>.button {
 
 main>.initial>.texts>.button:hover {
     transform: scale(1.08);
+}
+
+main>.initial>.texts>.features {
+    gap: 2em;
+    display: flex;
+    margin-top: 3em;
+}
+
+main>.initial>.texts>.features>.feature {
+    gap: 0.5em;
+    display: flex;
+    max-width: 25em;
+    flex-direction: row;
+}
+
+main>.initial>.texts>.features>.feature>.icon {
+    width: 2em;
+    fill: #FFFFFF;
+    align-self: flex-start;
+}
+
+main>.initial>.texts>.features>.feature>.text {
+    width: 90%;
+    font-size: 1em;
 }
 
 main>.initial>.container-photo {
@@ -92,6 +116,12 @@ main>.about>.title {
     text-align: center;
 }
 
+main>.about>.subtitle {
+    font-size: 1.1em;
+    align-self: center;
+    text-align: center;
+}
+
 main>.about>.description {
     width: 80%;
     max-width: 32em;
@@ -102,46 +132,39 @@ main>.about>.description {
     font-weight: normal;
 }
 
-main>.equipments {
+main>.why {
     display: flex;
-    margin-top: 5em;
-    align-self: center;
+    margin-top: 4em;
 }
 
-main>.equipments>.title {
-    width: 80%;
+main>.why>.title {
+    max-width: 15em;
+    font-size: 1.3em;
+    font-weight: 600;
     color: #F9C823;
-    font-weight: 600;
-    font-size: 2.2em;
     align-self: center;
     text-align: center;
 }
 
-main>.equipments>.description {
-    width: 80%;
-    margin-top: 1em;
-    font-size: 1.5em;
-    color: #FFFFFF;
-    font-weight: 600;
-    align-self: center;
-    text-align: center;
-}
-
-main>.equipments>.photos {
-    gap: 3em;
+main>.why>.feature {
+    gap: 2em;
     display: flex;
-    overflow: auto;
-    margin-top: 5em;
-    margin-bottom: 4em;
-    flex-direction: row;
-    scroll-snap-type: x mandatory;
-    justify-content: space-between;
+    max-width: 23em;
+    margin-top: 2em;
+    align-self: center;
 }
 
-main>.equipments>.photos>.photo {
-    width: 20%;
-    min-width: 266px;
-    scroll-snap-align: center;
+main>.why>.feature>.title {
+    font-size: 1.6em;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+
+main>.why>.feature>.description {
+    font-size: 1.1em;
+    align-self: center;
+    text-align: center;
 }
 
 footer {
@@ -169,10 +192,16 @@ footer>.description {
     
     main>.initial>.texts>.title {
         font-size: 1.6em;
+        text-align: center;
     }
     
     main>.initial>.texts>.description {
         font-size: 1.2em;
+        text-align: center;
+    }
+
+    main>.initial>.texts>.button {
+        align-self: center;
     }
     
     main>.initial>.container-photo {
@@ -188,15 +217,15 @@ footer>.description {
         font-size: 1.6em;
     }
 
+    main>.about>.title {
+        font-size: 1.6em;
+    }
+
+    main>.about>.subtitle {
+        font-size: 0.9em;
+    }
+
     main>.about>.description {
         font-size: 1.2em;
-    }
-
-    main>.equipments {
-        width: 100%;
-    }
-
-    main>.equipments>.description {
-        font-size: 1em;
     }
 }
